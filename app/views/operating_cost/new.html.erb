@@ -1,1 +1,38 @@
-<h1>Hello world</h1>
+<div class="container-fluid" style="margin-top:130px">
+  <div class="row">
+    <div class="col-md-4 offset-md-4">
+      <h1>Ingrese datos de Facturación</h1>
+      <br><br><br>
+      <form accept-charset="UTF-8" action="/operating_cost" method="POST">
+        <div class="form-group">
+          <label for="formGroupExampleInput">Rut emisor</label>
+          <input type="text" class="form-control" name="invoice[client_dni]" placeholder="xx.xxx.xxx-x" >
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="formGroupExampleInput2">Rut Deudor</label>
+          <input type="text" class="form-control" name="invoice[debtor_dni]" placeholder="xx.xxx.xxx-x" >
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="formGroupExampleInput2">Monto de la factura</label>
+          <input type="number" class="form-control" min=0 name="invoice[document_amount]">
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="formGroupExampleInput2">Folio</label>
+          <input type="number" class="form-control" min="0" name="invoice[folio]">
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="formGroupExampleInput2">Fecha de vencimiento</label>
+          <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="dd-mm-aaaa" name="invoice[expiration_date]">
+        </div>
+        <br>
+        <br>
+        <button type="submit" class="btn btn-primary btn-lg">Generar gastos de facturación</button>
+      </form>
+      
+    </div>
+  </div>
+</div>
