@@ -1,12 +1,14 @@
 <div class="container-fluid" style="margin-top:130px">
   <div class="row">
     <div class="col-md-4 offset-md-4">
+      <a href="/"><- Volver atrás</a>
+      <br>
       <h1>Resultados</h1>
       <br><br><br>
       <ul class="list-group">
-        <li class="list-group-item">Tasa de negocio: <%= @operation_cost["document_rate"] %></li>
-        <li class="list-group-item">Comisión de la operación <%= @operation_cost["commission"]%></li>
-        <li class="list-group-item">Porcentaje de anticipo <%= @operation_cost["advance_percent"]%></li>
+        <li class="list-group-item"><strong>Costo de financiamiento:</strong> <%= @process_calculation["financing_cost"] %></li>
+        <li class="list-group-item"><strong>Giro a recibir:</strong></string> <%= @process_calculation["giro_to_receive"]%></li>
+        <li class="list-group-item"><strong>Excedentes:</strong> <%= @process_calculation["excess"]%></li>
       </ul>
     </div>
   </div>
