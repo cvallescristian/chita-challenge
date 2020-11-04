@@ -15,7 +15,7 @@ To fast setup you can use docker.
 
   ```
 
-### On your machine
+### On your machine
 
 List of requirements: 
 * Ruby 2.7.1
